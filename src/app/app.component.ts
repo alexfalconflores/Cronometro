@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'cronometro';
+  mensaje = '';
+
+  // tslint:disable-next-line: typedef
+  actualizar(t: string)
+  {
+    this.mensaje = t + '(se actualiza cada 10 segundos)';
+  }
 }
